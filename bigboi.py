@@ -1,8 +1,8 @@
+antal = int(input("Hur många tal ska skrivas ut? "))
+i = int(input("Vilket värde har det minsta talet? "))
 
-name = input("Vad är ditt namn? ")
-cash = int(input("Hur mycket pengar har du? "))
+while i < i + antal:
 
-if cash > 100000:
-    print(name, "du är rik. Man kommer långt med", str(cash) + "kr på kontot")
-else:
-    print(name, "du är inte rik. Man kommer inte långt med", str(cash) + "kr på kontot")
+    print(i)
+
+    i = i + 1

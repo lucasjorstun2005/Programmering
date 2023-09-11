@@ -11,7 +11,7 @@ print("Du gissade rätt")
 # Detta är uppgift 2
 '''
 tal = input("Gissa ett tal: ")
-attempts = 0
+attempts = 1
 
 while int(tal) != 42:
     if int(tal) < 42:
@@ -24,7 +24,7 @@ print("Du behövde", str(attempts), "försök för att gissa rätt")
 '''
 
 # Detta är uppgift 3
-'''
+
 svar = input("Vad heter Norges huvudstad? ") 
 attempts = 3
 while svar.lower() != "oslo":
@@ -33,11 +33,9 @@ while svar.lower() != "oslo":
     if attempts == 0:
         print("Du har slut på försök, spelet är slut.")
         break
-    elif svar == "oslo":
-        print("Rätt svar, bra jobbat!")
-        break
     svar = input("Gör ett till försök, Vad heter Norges huvudstad? ")
-'''
+if svar.lower() == "oslo":
+        print("Rätt svar, bra jobbat!")
 
 # Detta är bonusuppgiften
 '''

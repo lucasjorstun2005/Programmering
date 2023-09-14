@@ -1,11 +1,11 @@
 import random
 
-svar = input("Vill du spela? j/n ")
-dice1 = random.randrange(1, 7)
-dice2 = random.randrange(1, 7)
+print("Welcome to tärning")
+pengar = input("Hur mycket vill du spela om? ")
+dice1 = random.randrange(5, 6)
+dice2 = random.randrange(6, 7)
 
-
-if svar == "j":
+while pengar > 0:
     print(dice1, dice2)
     if dice1 == dice2 and dice1 == 6:
         print("6 vinst")
@@ -18,7 +18,8 @@ if svar == "j":
     else:
         print("Förlust")
     print("Tack för att du spelade en stund!")
-elif svar == "n":
-    print("Det är OK, du kanske vill spela någon annan gång")
-else:
-    print("svara med 'j' eller 'n'.")
+
+    if svar == "n":
+        print("Det är OK, du kanske vill spela någon annan gång")
+    else:
+        print("svara med 'j' eller 'n'.")

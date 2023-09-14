@@ -24,7 +24,7 @@ print("Du behövde", str(attempts), "försök för att gissa rätt")
 '''
 
 # Detta är uppgift 3
-
+'''
 svar = input("Vad heter Norges huvudstad? ") 
 attempts = 3
 while svar.lower() != "oslo":
@@ -36,7 +36,7 @@ while svar.lower() != "oslo":
     svar = input("Gör ett till försök, Vad heter Norges huvudstad? ")
 if svar.lower() == "oslo":
         print("Rätt svar, bra jobbat!")
-
+'''
 # Detta är bonusuppgiften
 '''
 def ar_primtal(n):

@@ -1,25 +1,47 @@
 import random
 
-print("Welcome to tärning")
-pengar = input("Hur mycket vill du spela om? ")
-dice1 = random.randrange(5, 6)
-dice2 = random.randrange(6, 7)
+print("Välkommen till tärning\nEtt spel kostar 1kr\nVinstplan:\ntvå lika - 5kr\nen sexa - 3kr\nstege - 3kr")
+svar = input("Välj sätt in pengar (i), eller avsluta (a): ")
+if svar == "i":
+    pengar = int(input("Hur mycket vill du lägga in? (skriv bara siffror): "))
+    pengar = pengar - 1
+elif svar == "a":
+    pengar = 0
+else:
+    print("Skriv i eller a")
+dice1 = random.randrange(1, 7)
+dice2 = random.randrange(1, 7)
 
-while pengar > 0:
+while pengar > -1:
     print(dice1, dice2)
-    if dice1 == dice2 and dice1 == 6:
-        print("6 vinst")
+    if dice1 == 6 or dice2 == 6:
+        print("6-vinst + 3kr")
+        pengar = pengar + 3
     elif dice1 + 1 == dice2:
-        print("Stege-vinst")
-    elif dice2 + 1 == dice1:
-        print("Bakåt Stege-vinst")
+        print("stege-vinst + 3kr")
+        pengar = pengar + 3
     elif dice1 == dice2:
-        print("Vinst")
+        print("Vinst + 5kr")
+        pengar = pengar + 5
     else:
         print("Förlust")
-    print("Tack för att du spelade en stund!")
-
-    if svar == "n":
-        print("Det är OK, du kanske vill spela någon annan gång")
+    print("Du har nu", str(pengar) + "kr.")
+    svar = input("Vill du spela (s), sätta in pengar (i), eller avsluta (a)? ")
+    if svar == "s":
+        pengar = pengar - 1
+        dice1 = random.randrange(1, 7)
+        dice2 = random.randrange(1, 7)
+        continue
+    elif svar == "i":
+        antal = int(input("Hur mycket vill du sätta in? (skriv bara i siffror): "))
+        pengar = pengar + antal
+        pengar = pengar - 1
+        dice1 = random.randrange(1, 7)
+        dice2 = random.randrange(1, 7)
+        continue
+    elif svar == "a":
+        break
     else:
-        print("svara med 'j' eller 'n'.")
+        print('Skriv "s", "i", eller "a"')
+print("Du avslutade med", str(pengar) + "kr")
+print("Hejdå!")

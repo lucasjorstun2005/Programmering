@@ -1,5 +1,16 @@
 import random
 
+
+svar = input("Välj sätt in pengar (i), eller avsluta (a)")
+if svar == "i":
+    pengar = int(input("Hur mycket vill du sätta in?"))
+    print("Ditt saldo är", pengar + "kr")
+elif svar == "a":
+    print("Hejdå")
+else:
+    print("Svara med i eller j")
+dice1 = random.randrange(5, 6)
+dice2 = random.randrange(6, 7)
 print("Välkommen till tärning\nEtt spel kostar 1kr\nVinstplan:\ntvå lika - 5kr\nen sexa - 3kr\nstege - 3kr")
 svar = input("Välj sätt in pengar (i), eller avsluta (a): ")
 if svar == "i":

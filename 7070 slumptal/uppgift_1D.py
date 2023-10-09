@@ -1,7 +1,15 @@
 import random
 
-print("Welcome to tärning")
-pengar = input("Hur mycket vill du spela om? ")
+print("Welcome to tärning\Ett spel kostart 1 krona.\nVinstplan:\ntvå lika - 5kr\nen sexa - 3 kr\nstege - 3 kr")
+
+svar = input("Välj sätt in pengar (i), eller avsluta (a)")
+if svar == "i":
+    pengar = int(input("Hur mycket vill du sätta in?"))
+    print("Ditt saldo är", pengar + "kr")
+elif svar == "a":
+    print("Hejdå")
+else:
+    print("Svara med i eller j")
 dice1 = random.randrange(5, 6)
 dice2 = random.randrange(6, 7)
 
@@ -18,8 +26,4 @@ while pengar > 0:
     else:
         print("Förlust")
     print("Tack för att du spelade en stund!")
-
-    if svar == "n":
-        print("Det är OK, du kanske vill spela någon annan gång")
-    else:
-        print("svara med 'j' eller 'n'.")
+print("Hejdå!")

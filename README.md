@@ -1,6 +1,9 @@
 # Loggbok
 ===========
 
+## Vekca 42
+> Jag fortsatte med listorna och blev klar med 4A. Jag fick problem med Git, det går inte för dig att se uppgifterna för 7100 men tror bara att det får vara så då jag inte riktigt vet hur jag ska lösa det.
+
 ## Vecka 41
 > Jag gjorde for-each och for listor med range, samt att jag började med att göra uppgifterna för listor.
 > Jag lärde mig hur jag kan använda for loopar samt att jag lärde mig om hur man kan använda listor.

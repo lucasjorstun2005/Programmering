@@ -1,5 +1,13 @@
 # Loggbok
 ===========
+## Vecka 46
+> Jag gjorde 5B vilken jag tyckte var hyfsat enkel men lite svår att debugga, så jag gjorde en infinite loop medvetet som bröts när det blev Yatzy. Alltså gjorde jag en while True på hela programmet och när det blev yatzy bröts det.
+
+## Vecka 44
+> Jag gjorde uppgift 4C och fixade några problem som jag hade med 4B. Tyckte att 4C var ganska svår och tyckte att det var den svåraste jag hade gjort än så länge. Jag gjorde också 4D och 5A. 5A var lätt men 4D var mycket svårare än 4C
+
+## Vecka 43
+> Jag gjorde 4B som jag tyckte gick ganska bra att göra men den var lite svår tyckte jag.
 
 ## Vekca 42
 > Jag fortsatte med listorna och blev klar med 4A. Jag fick problem med Git, det går inte för dig att se uppgifterna för 7100 men tror bara att det får vara så då jag inte riktigt vet hur jag ska lösa det.

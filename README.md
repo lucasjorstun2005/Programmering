@@ -1,5 +1,8 @@
 # Loggbok
 ===========
+
+## Vecka 47
+> Jag började med Yatzy. Jag fick lära mig mer om att definera funktioner men framförallt att använda dom. Alltså att använde de olika funktionerna jag har i andra funktioner för att få programmet att "gå runt".
 ## Vecka 46
 > Jag började och blev klar med blackjack. Jag tyckte att det lättaste var att deala medans det svåraste var att få essets funktionalitet att fungera. Det var också lite svårt med olika conditionals för att vinna. Jag behövde sätta de i vissa ordningar så att det blev rätt, till exempel så ville jag ha att det skulle stå "Blackjack!" när man fick blackjack. I början så satte jag den elifen i win conditionals vilket blev fel då man först behövde standa och efter det så kom det fram blackjack. Sedan hade jag också satt den elifen efter min "vinst" elif så den kom aldrig fram. Så där fick jag ändra så att den istället hamnade i loopen när man dealar och att om man får blackjack så avslutas spelet direkt och man behöver inte säga stand först. Jag använde ingen annan hjälp utan jag lyckades lösa det själv.
 

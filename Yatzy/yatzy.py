@@ -1,4 +1,5 @@
 import random
+from matches import points
 
 dices = []
 
@@ -7,18 +8,13 @@ def main():
     print("Välkommen till Yatzy!\nDessa kan du välja på efter en runda (Skriv hela namnet t.ex Tretal):\nEttor\nTvåor\nTreor\nFyror\nFemmor\nSexor\nEtt Par\nTvå Par\nTretal\nFyrtal\nLiten Stege\nStor Stege\nChans (kan bara väljas en gång)\nKåk\nYatzy\nOm summan av dina Ettor, Tvåor, Treor, Fyror, Femmor och Sexor är 63 eller mer får du 50 poäng extra i bonus. Du kan alltså inte välja bonus.")
     print("\n")
     i = 0
+    j = 0
     while i < 14:
         firstcast()
         printdices()
-        choice = print("Vill du ta bort några tärningar? (j, n)")
-        if choice == "j":
-            amount = remove()
-            cast(amount)
-            
-            
-
-    
-
+        i += 1
+        runda()
+        
 
 def cast(x):
     for i in range(x):
@@ -39,5 +35,18 @@ def remove():
 def printdices():
     dices_str = "".join(dices)
     return f"Dina tärningar är {dices_str}"
+
+def runda():
+    while j < 2:
+            printdices()
+            choice = print("Vill du ta bort några tärningar? (j, n)")
+            if choice.lower() == "j":
+                amount = remove()
+                cast(amount)
+            elif choice.lower() == "n":
+                print(printdices())
+                points(dices)
+                break
+            j += 1
 
 main()

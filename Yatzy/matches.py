@@ -65,7 +65,7 @@ def points(dices):
         if matchar['Sexor'] == 0:
             print("Stryker Sexor")
 
-    elif svar.lower() == "par":
+    elif svar.lower() == "ett par" or svar.lower() == "par" or svar.lower() == "ettpar":
         i = 0
         j = 1
         while i < len(dices):
@@ -82,8 +82,85 @@ def points(dices):
         i = 0
         j = 0
 
-    elif svar.lower() == "tvåor":
-        pass
+    elif svar.lower() == "två par" or svar.lower() == "tvåpar":
+        i = 0
+        j = 1
+        par1 = 0
+        par2 = 0
+        while i < len(dices):
+            while j < len(dices):
+                if par1 == 0:
+                    if dices[i] == dices[j]:
+                        par1 = dices[i] + dices[j]
+                elif par1 != 0:
+                    if dices[i] == dices[j]:
+                        par2 = dices[i] + dices[j]
+                j += 1
+            j = 0
+            i += 1
+            break
+        matchar['Tvåpar'] += par1 + par2
+        if matchar['Tvåpar'] == 0:
+            print("Stryker Två Par")
+        i = 0
+        j = 0
 
+    elif svar.lower() == "tretal" or svar.lower() == "triss":
+        i = 0
+        j = 1
+        k = 2
+        while i < len(dices):
+            while j < len(dices):
+                while k < len(dices):
+                    if dices[i] == dices[j] and dices[j] == dices[k]:
+                        matchar['Tretal'] = dices[i] + dices[j] + dices[k]
+                        break
+                    k += 1
+                k = 0
+                j += 1
+            j = 0
+            i += 1
+            break
+        if matchar['Tretal'] == 0:
+            print("Stryker Treor")
+        i = 0
+        j = 0
+        k = 0
+    
+    elif svar.lower() == "fyrtal":
+        i = 0
+        j = 1
+        k = 2
+        h = 3
+        while i < len(dices):
+            while j < len(dices):
+                while k < len(dices):
+                    while h < len(dices):
+                        if dices[i] == dices[j] and dices[i] == dices[k] and dices[h]:
+                            matchar['Fyrtal'] = dices[i] + dices[j] + dices[k] + dices[h]
+                            break
+                        h += 1
+                    h = 0
+                    k += 1
+                k = 0
+                j += 1
+            j = 0
+            i += 1
+            break
+        if matchar['Fyrtal'] == 0:
+            print("Stryker Fyrtal")
+        i = 0
+        j = 0
+        k = 0
+        h = 0
+    
+    elif svar.lower() == "chans":
+        matchar['chans'] = sum(dices)
+    
+    
+            
+        
+        
+        
     total = sum(matchar)
     return total

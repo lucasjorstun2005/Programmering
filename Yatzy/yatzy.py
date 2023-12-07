@@ -8,7 +8,6 @@ def main():
     print("Välkommen till Yatzy!\nDessa kan du välja på efter en runda (Skriv hela namnet t.ex Tretal):\nEttor\nTvåor\nTreor\nFyror\nFemmor\nSexor\nEtt Par\nTvå Par\nTretal\nFyrtal\nLiten Stege\nStor Stege\nChans (kan bara väljas en gång)\nKåk\nYatzy\nOm summan av dina Ettor, Tvåor, Treor, Fyror, Femmor och Sexor är 63 eller mer får du 50 poäng extra i bonus. Du kan alltså inte välja bonus.")
     print("\n")
     i = 0
-    j = 0
     while i < 14:
         firstcast()
         printdices()

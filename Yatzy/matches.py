@@ -1,5 +1,7 @@
 from yatzy import dices, printdices
+from collections import Counter
 
+dices = dices
 matchar = {
     'Ettor': 0,
     'Tvåor': 0,
@@ -66,93 +68,53 @@ def points(dices):
             print("Stryker Sexor")
 
     elif svar.lower() == "ett par" or svar.lower() == "par" or svar.lower() == "ettpar":
-        i = 0
-        j = 1
-        while i < len(dices):
-            while j < len(dices):
-                if dices[i] == dices[j]:
-                    matchar['Par'] += dices[i] + dices[j]
-                    break
-                j += 1
-            j = 0
-            i += 1
-            break
-        if matchar['Par'] == 0:
+        d = Counter(dices)
+
+        par = []
+        t = 0
+
+        for dice, count in d.items():
+            par.append(dice * 2)
+            if len(par) == 1:
+                t = sum(par)
+                break
+        if t > 0:
+            matchar['Par'] += t
+        else:
             print("Stryker Ett par")
-        i = 0
-        j = 0
 
     elif svar.lower() == "två par" or svar.lower() == "tvåpar":
-        i = 0
-        j = 1
-        par1 = 0
-        par2 = 0
-        while i < len(dices):
-            while j < len(dices):
-                if par1 == 0:
-                    if dices[i] == dices[j]:
-                        par1 = dices[i] + dices[j]
-                elif par1 != 0:
-                    if dices[i] == dices[j]:
-                        par2 = dices[i] + dices[j]
-                j += 1
-            j = 0
-            i += 1
-            break
-        matchar['Tvåpar'] += par1 + par2
-        if matchar['Tvåpar'] == 0:
-            print("Stryker Två Par")
-        i = 0
-        j = 0
+        dice_count = Counter(dices)
+        
+        pairs = []
+        totalt = 0
+
+        for dice, count in dice_count.items():
+            if count >= 2:
+                pairs.append(dice * 2)
+                if len(pairs) == 2:
+                    totalt = sum(pairs)
+                    break
+        if totalt > 0:
+            matchar['Tvåpar'] += totalt
+        else:
+            print("Stryker Tvåpar")
 
     elif svar.lower() == "tretal" or svar.lower() == "triss":
-        i = 0
-        j = 1
-        k = 2
-        while i < len(dices):
-            while j < len(dices):
-                while k < len(dices):
-                    if dices[i] == dices[j] and dices[j] == dices[k]:
-                        matchar['Tretal'] = dices[i] + dices[j] + dices[k]
-                        break
-                    k += 1
-                k = 0
-                j += 1
-            j = 0
-            i += 1
-            break
+        tärning_räknare = Counter(dices)
+        for dice, count in tärning_räknare.items():
+            if count >= 3:
+                matchar['Tretal'] = 3 * dice
         if matchar['Tretal'] == 0:
-            print("Stryker Treor")
-        i = 0
-        j = 0
-        k = 0
+            print("Stryker Tretal")
     
     elif svar.lower() == "fyrtal":
-        i = 0
-        j = 1
-        k = 2
-        h = 3
-        while i < len(dices):
-            while j < len(dices):
-                while k < len(dices):
-                    while h < len(dices):
-                        if dices[i] == dices[j] and dices[i] == dices[k] and dices[h]:
-                            matchar['Fyrtal'] = dices[i] + dices[j] + dices[k] + dices[h]
-                            break
-                        h += 1
-                    h = 0
-                    k += 1
-                k = 0
-                j += 1
-            j = 0
-            i += 1
-            break
+        dice_counts = Counter(dices)
+        for dice, count in dice_counts.items():
+            if count >= 4:
+                matchar['Fyrtal'] = 4 * dice
         if matchar['Fyrtal'] == 0:
             print("Stryker Fyrtal")
-        i = 0
-        j = 0
-        k = 0
-        h = 0
     
     elif svar.lower() == "chans":
         matchar['chans'] = sum(dices)

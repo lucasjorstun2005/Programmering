@@ -1,6 +1,11 @@
 # Loggbok
 ===========
 
+## Vecka 49
+> Jag implementerade funktionaliteten för tvåpar, tretal, fyrtal, och chans. Chans var väldigt simpelt men resten var lite svårare, jag tyckte att tvåpar var det svåraste att göra då jag behövde komma på ett sätt att kunna separera på de två olika paren. Tretal och fyrtal var inte "svårt" men jag kan göra en bättre implementation av det.
+## Vecka 48
+> Jag började med att implementera "matcharna" för svaren till tärningarna. Jag gjorde för ettor, tvåor, treor, fyror, femmor, sexor, och ett par. Det var inga större problem då det var ganska simpelt men jag behövde lära mig hur jag hanterar dictionaries. Det jag inte visste hur man gjorde var att öka värdet på ett value, jag hittade denna artikeln https://phoenixnap.com/kb/python-add-to-dictionary vilket var där jag lärde mig hur man gjorde det. Paret var lite svårare då jag fick göra en nested loop men det var inte direkt några större problem
+
 ## Vecka 47
 > Jag började med Yatzy. Jag fick lära mig mer om att definera funktioner men framförallt att använda dom. Alltså att använde de olika funktionerna jag har i andra funktioner för att få programmet att "gå runt".
 ## Vecka 46

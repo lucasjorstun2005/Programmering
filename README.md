@@ -1,7 +1,7 @@
 # Loggbok
 ===========
 ## Vecka 50
-Jag förbättrade "funktionen" för ettpar, tvåpar, tretal och fyrtal då den inte var optimal som sagt i loggboken för vecka 49. Det jag gjorde var att jag först försökte komma på någon lösning men kom inte direkt på någon optimal lösning först. Så det jag började göra var att leta efter lite bibliotek som kanske har något i stilen till vad jag ville göra. Jag hittade ett som hette Counter från biblioteket collections som finns med när man installerar python. Jag läste lite om det här https://realpython.com/python-counter/ Sedan så lekte jag runt med lite olika potentiella lösningar tills jag hittade en som jag är ganska säker på kommer att fungera.
+> Jag förbättrade "funktionen" för ettpar, tvåpar, tretal och fyrtal då den inte var optimal som sagt i loggboken för vecka 49. Det jag gjorde var att jag först försökte komma på någon lösning men kom inte direkt på någon optimal lösning först. Så det jag började göra var att leta efter lite bibliotek som kanske har något i stilen till vad jag ville göra. Jag hittade ett som hette Counter från biblioteket collections som finns med när man installerar python. Jag läste lite om det här https://realpython.com/python-counter/ Sedan så lekte jag runt med lite olika potentiella lösningar tills jag hittade en som jag är ganska säker på kommer att fungera.
 
 ## Vecka 49
 > Jag implementerade funktionaliteten för tvåpar, tretal, fyrtal, och chans. Chans var väldigt simpelt men resten var lite svårare, jag tyckte att tvåpar var det svåraste att göra då jag behövde komma på ett sätt att kunna separera på de två olika paren. Tretal och fyrtal var inte "svårt" men jag kan göra en bättre implementation av det.

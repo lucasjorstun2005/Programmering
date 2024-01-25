@@ -1,10 +1,9 @@
 import random
-from matches import points, mathcar
+from matches import points, matchar
 
 dices = []
 
 def main():
-    global dices
     print("Välkommen till Yatzy!\nDessa kan du välja på efter en runda (Skriv hela namnet t.ex Tretal):\nEttor\nTvåor\nTreor\nFyror\nFemmor\nSexor\nEtt Par\nTvå Par\nTretal\nFyrtal\nLiten Stege\nStor Stege\nChans (kan bara väljas en gång)\nKåk\nYatzy\nOm summan av dina Ettor, Tvåor, Treor, Fyror, Femmor och Sexor är 63 eller mer får du 50 poäng extra i bonus. Du kan alltså inte välja bonus.")
     print("\n")
     i = 0
@@ -14,12 +13,10 @@ def main():
         i += 1
         runda()
         
-
 def cast(x):
     for i in range(x):
         dice = random.randint(1, 6)
         dices.append(dice)
-
 
 def firstcast():
     cast(5)

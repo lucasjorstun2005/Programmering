@@ -1,5 +1,8 @@
 # Loggbok
 ===========
+
+## Vecka 51 - 4
+> Under dessa veckor har jag lagt mitt projekt åt sidan lite grann och övat på andra områden inom Python. Jag har gjort en hel del på sidan Leetcode där jag löst olika problem. Exempel på saker jag lärt mig mer om är Binary träd, depth-first search och Breadth-first search. Har också lärt mig mer om listor och hur man kan använda dom. Har också lärt mig mer om andra grundläggande koncept som loopar, datatyper. Det finns andra saker jag lärt mig mer om men jag anser att det är det jag nämnde som jag lärt mig mest om.
 ## Vecka 50
 > Jag förbättrade "funktionen" för ettpar, tvåpar, tretal och fyrtal då den inte var optimal som sagt i loggboken för vecka 49. Det jag gjorde var att jag först försökte komma på någon lösning men kom inte direkt på någon optimal lösning först. Så det jag började göra var att leta efter lite bibliotek som kanske har något i stilen till vad jag ville göra. Jag hittade ett som hette Counter från biblioteket collections som finns med när man installerar python. Jag läste lite om det här https://realpython.com/python-counter/ Sedan så lekte jag runt med lite olika potentiella lösningar tills jag hittade en som jag är ganska säker på kommer att fungera.
 

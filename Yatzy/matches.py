@@ -1,7 +1,5 @@
-from yatzy import dices, printdices
 from collections import Counter
 
-dices = dices
 matchar = {
     'Ettor': 0,
     'Tvåor': 0,

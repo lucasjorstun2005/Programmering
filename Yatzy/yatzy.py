@@ -1,5 +1,6 @@
 import random
-from matches import points, matchar
+from matches import points
+from matches import matchar
 
 dices = []
 
@@ -9,14 +10,19 @@ def main():
     i = 0
     while i < 14:
         firstcast()
-        printdices()
-        i += 1
+        print(printdices())
         runda()
+        i += 1
+    total = sum(matchar)
+    print(f"Din total är: {total} poäng")
+    
         
 def cast(x):
-    for i in range(x):
+    i = 0
+    while i < x:
         dice = random.randint(1, 6)
         dices.append(dice)
+        i += 1
 
 def firstcast():
     cast(5)
@@ -24,25 +30,32 @@ def firstcast():
 def remove():
     amount = int(input("Hur många tärningar vill du ta bort? "))
     for i in range(amount):
-        tärning = input("Säg en tärning du vill ta bort: ")
+        tärning = int(input("Säg en tärning du vill ta bort: "))
         dices.remove(tärning)
     return amount
 
 def printdices():
-    dices_str = "".join(dices)
+    dices_str = " ".join(map(str, dices))
     return f"Dina tärningar är {dices_str}"
 
 def runda():
+    j = 0
     while j < 2:
             printdices()
-            choice = print("Vill du ta bort några tärningar? (j, n)")
+            choice = input("Vill du ta bort några tärningar? (j, n)")
             if choice.lower() == "j":
                 amount = remove()
                 cast(amount)
+                print(printdices())
             elif choice.lower() == "n":
                 print(printdices())
-                points(dices)
                 break
             j += 1
+            points(dices)
+    se = input("Vill du se dina resultat? (j för ja och n för nej)")
+    if se.lower() == "j" or se.lower() == "ja":
+        print(matchar)
+    elif se.lower() == "n" or se.lower() == "nej":
+        pass
 
 main()

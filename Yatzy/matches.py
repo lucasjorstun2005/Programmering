@@ -216,7 +216,7 @@ def points(dices):
         
         
     # Totalen är summan av alla värden på matcharna
-    total = sum(matchar)
+    total = sum(list(matchar.values()))
 
     # Returnera värdet av total till yatzy.py
     return total

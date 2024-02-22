@@ -13,7 +13,7 @@ def main():
         print(printdices())
         runda()
         i += 1
-    total = sum(matchar)
+    total = sum(list(matchar.values()))
     print(f"Din total är: {total} poäng")
     
         
@@ -42,7 +42,7 @@ def runda():
     j = 0
     while j < 2:
             printdices()
-            choice = input("Vill du ta bort några tärningar? (j, n)")
+            choice = input("Vill du ta bort några tärningar? (j, n) ")
             if choice.lower() == "j":
                 amount = remove()
                 cast(amount)
@@ -51,8 +51,8 @@ def runda():
                 print(printdices())
                 break
             j += 1
-            points(dices)
-    se = input("Vill du se dina resultat? (j för ja och n för nej)")
+    points(dices)
+    se = input("Vill du se dina resultat? (j för ja och n för nej) ")
     if se.lower() == "j" or se.lower() == "ja":
         print(matchar)
     elif se.lower() == "n" or se.lower() == "nej":

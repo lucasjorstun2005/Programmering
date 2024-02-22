@@ -1,6 +1,7 @@
 # Loggbok
 ===========
-
+## Vecka 8
+> Jag fixade en del errors som jag hade i koden, de flesta var bara lite småfel jag hade i koden men jag hade en där jag hade en circular import så jag fick fixa lite med mina imports och använda funktionsargument istället så fixade det sig.
 ## Vecka 51 - 4
 > Under dessa veckor har jag lagt mitt projekt åt sidan lite grann och övat på andra områden inom Python. Jag har gjort en hel del på sidan Leetcode där jag löst olika problem. Exempel på saker jag lärt mig mer om är Binary träd, depth-first search och Breadth-first search. Har också lärt mig mer om listor och hur man kan använda dom. Har också lärt mig mer om andra grundläggande koncept som loopar, datatyper. Det finns andra saker jag lärt mig mer om men jag anser att det är det jag nämnde som jag lärt mig mest om.
 ## Vecka 50

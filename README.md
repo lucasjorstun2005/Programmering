@@ -1,5 +1,9 @@
 # Loggbok
 ===========
+## Vecka 10
+> Jag gjorde klart hänga gubbe. Det var inte ett jättesvårt projekt och det ända riktiga problemet jag hade var att jag hade använt i som variabel i en nested loop när "main" loopen också använde i som variabel. Utöver det så var det några småfix jag gjorde samt en lite bättre interface för det. Till exempel så lade jag till att ordet var gömt med understreck så att man kan följa hur långt man har kommit. Jag tog ingen direkt hjälp av youtube, stack overflow eller liknande då det inte behövdes. 
+## Vecka 9
+> Jag började med ett lite mindre projekt på hänga gubbe. Jag ville inte göra något som skulle ta jättelång tid så jag tog något lite mindre. Jag gjorde en lista med ord och började lite grann med implementation av programmet i sig
 ## Vecka 8
 > Jag fixade en del errors som jag hade i koden, de flesta var bara lite småfel jag hade i koden men jag hade en där jag hade en circular import så jag fick fixa lite med mina imports och använda funktionsargument istället så fixade det sig. På torsdagen gjorde jag klart projektet, jag fixade några errors, framförallt så var det att jag inte kunde få summan från min dictionary med resultaten. Detta var för att den blandade ihop str och int när jag använde sum. Så jag fick göra sum(list(matchar.values())) För att få det jag ville ha, jag skulle kunna göra lite finjusteringar men jag var ganska trött på projektet så jag tror att jag rör mig vidare ifrån det.
 ## Vecka 51 - 4

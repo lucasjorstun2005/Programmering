@@ -36,3 +36,4 @@ if guesses == 7:
     print("Tyvärr, du klarade det inte. Bättre lycka nästa gång!")
     print(f"Ordet var: {word}")
 
+

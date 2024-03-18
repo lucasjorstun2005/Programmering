@@ -1,5 +1,15 @@
 # Loggbok
 ===========
+## Vecka 12
+> Jag satte igång katalogen och fil för tre-i-rad och planering med mål inför projektet:
+> Mål
+> 1. Regler, alltså win conditions för vertikala, horisontella och diagonella vinster
+> 2. Logik för spelets gång, alltså sätta igång spelet, vems tur det är, spelaren gör sitt drag, kollar efter en vinst, om det är en vinst välj ut en vinnare, annars gör det till den andra spelarens tur. (Bara kalla funktioner, inte funktionerna själva än)
+> 3. Klasser för spelare
+> 4. Initiering av spelbrädet med rutor
+> 5. Alla funktionerna för mål 2
+## Vecka 11
+> Satt mest och funderade på vad jag skulle göra för projekt, tänkte att jag kanske skulle göra något som är objektorienterat och det slutade upp med att jag tänkte göra ett tre-i-rad spel.
 ## Vecka 10
 > Jag gjorde klart hänga gubbe. Det var inte ett jättesvårt projekt och det ända riktiga problemet jag hade var att jag hade använt i som variabel i en nested loop när "main" loopen också använde i som variabel. Utöver det så var det några småfix jag gjorde samt en lite bättre interface för det. Till exempel så lade jag till att ordet var gömt med understreck så att man kan följa hur långt man har kommit. Jag tog ingen direkt hjälp av youtube, stack overflow eller liknande då det inte behövdes. 
 ## Vecka 9

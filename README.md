@@ -3,10 +3,10 @@
 ## Vecka 12
 > Jag satte igång katalogen och fil för tre-i-rad och planering med mål inför projektet:
 > Mål
-> 1. Regler, alltså win conditions för vertikala, horisontella och diagonella vinster
-> 2. Logik för spelets gång, alltså sätta igång spelet, vems tur det är, spelaren gör sitt drag, kollar efter en vinst, om det är en vinst välj ut en vinnare, annars gör det till den andra spelarens tur. (Bara kalla funktioner, inte funktionerna själva än)
+> 1. Logik för spelets gång, alltså sätta igång spelet, vems tur det är, spelaren gör sitt drag, kollar efter en vinst, om det är en vinst välj ut en vinnare, annars gör det till den andra spelarens tur. (Bara kalla funktioner, inte funktionerna själva än)
+> 2. Regler, alltså win conditions för vertikala, horisontella och diagonella vinster
 > 3. Klasser för spelare
-> 4. Initiering av spelbrädet med rutor
+> 4. Klass för spelbrädet med rutor
 > 5. Alla funktionerna för mål 2
 ## Vecka 11
 > Satt mest och funderade på vad jag skulle göra för projekt, tänkte att jag kanske skulle göra något som är objektorienterat och det slutade upp med att jag tänkte göra ett tre-i-rad spel.

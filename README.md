@@ -2,7 +2,7 @@
 ===========
 ## Vecka 12
 > Jag satte igång katalogen och fil för tre-i-rad och planering med mål inför projektet:
-> Mål
+### Mål
 > 1. Logik för spelets gång, alltså sätta igång spelet, vems tur det är, spelaren gör sitt drag, kollar efter en vinst, om det är en vinst välj ut en vinnare, annars gör det till den andra spelarens tur. (Bara kalla funktioner, inte funktionerna själva än)
 > 2. Regler, alltså win conditions för vertikala, horisontella och diagonella vinster
 > 3. Klasser för spelare

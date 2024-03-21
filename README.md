@@ -1,13 +1,13 @@
 # Loggbok
 ===========
 ## Vecka 12
-> Jag satte igång katalogen och fil för tre-i-rad och planering med mål inför projektet:
+> På fredagen började jag definera klasserna Game, Player, Humanplayer, Computerplayer, Board, och Move. Jag tänkte att jag börjar med att göra funktionen för spelbrädet och med lite tips från Rikard förstod jag ungefär hur jag skulle göra för att då fram rutorna och raderna i brädet. Det ända jag behövde lösa var hur jag skulle få allt att skrivas ut för spelaren, och jag hittade denna artikeln/"dokumentation" om funktionen sys.stdout.write. Här är länken till den artikeln: https://www.geeksforgeeks.org/sys-stdout-write-in-python/
+> På måndagen satte igång katalogen och fil för tre-i-rad och planering med mål inför projektet:
 ### Mål
-> 1. Definera klasserna. Dessa klasser är en klass för spelets gång, klasser för spelare, både för mänskliga spelare samt datorspelare om något sådant skulle vilja implementeras någon annan gång eller kanske av någon annan. Jag kommer själv inte göra det då det blir för komplicerat. Förutom de klasserna ska det också vara en klass för spelbrädet där jag definerar hur brädet ska se ut.
+> 1. Definera klasserna. Dessa klasser är en klass för spelets gång, klasser för spelare, både för mänskliga spelare samt datorspelare om något sådant skulle vilja implementeras någon annan gång eller kanske av någon annan. Jag kommer själv inte göra det då det blir för komplicerat. Förutom de klasserna ska det också vara en klass för spelbrädet där jag definerar hur brädet ska se ut. Jag ska också ha en klass "move" för vad som händer när en spelare gör ett drag
 > 2. Logik för spelets gång, alltså sätta igång spelet, vems tur det är, spelaren gör sitt drag, kollar efter en vinst, om det är en vinst välj ut en vinnare, annars gör det till den andra spelarens tur. (Bara kalla funktioner, inte funktionerna själva än)
-> 3. Funktion för när ett drag görs.
-> 4. Regler, alltså win conditions för vertikala, horisontella och diagonella vinster
-> 5. Alla funktionerna för mål 2
+> 3. Regler, alltså win conditions för vertikala, horisontella och diagonella vinster
+> 4. Alla funktionerna för mål 2
 ## Vecka 11
 > Satt mest och funderade på vad jag skulle göra för projekt, tänkte att jag kanske skulle göra något som är objektorienterat och det slutade upp med att jag tänkte göra ett tre-i-rad spel.
 ## Vecka 10

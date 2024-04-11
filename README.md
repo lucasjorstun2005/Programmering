@@ -1,5 +1,7 @@
 # Loggbok
 ===========
+## Vecka 13-15
+> Jag gjorde lite på game klassen men skapade också en klass för att göra ett drag. Det jag började med var en funktion som heter ask_move. Det den gör är att den först kollar om spelaren har angett ett korrekt nummer och efter det kollar den om det redan gjorts ett drag på det numret. Det var ganska svårt då jag inte är så van med att använda self så behövde bara experimentera lite med det men jag tror det är OK nu.
 ## Vecka 12
 > På fredagen började jag definera klasserna Game, Player, HumanPlayer, ComputerPlayer, Board, och Move. Jag tänkte att jag börjar med att göra funktionen för spelbrädet och med lite tips från Rikard förstod jag ungefär hur jag skulle göra för att då fram rutorna och raderna i brädet. Det ända jag behövde lösa var hur jag skulle få allt att skrivas ut för spelaren, och jag hittade denna artikeln/"dokumentation" om funktionen sys.stdout.write. Här är länken till den artikeln: https://www.geeksforgeeks.org/sys-stdout-write-in-python/
 > 

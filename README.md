@@ -1,7 +1,7 @@
 # Loggbok
 ===========
 ## Vecka 12
-> På fredagen började jag definera klasserna Game, Player, Humanplayer, Computerplayer, Board, och Move. Jag tänkte att jag börjar med att göra funktionen för spelbrädet och med lite tips från Rikard förstod jag ungefär hur jag skulle göra för att då fram rutorna och raderna i brädet. Det ända jag behövde lösa var hur jag skulle få allt att skrivas ut för spelaren, och jag hittade denna artikeln/"dokumentation" om funktionen sys.stdout.write. Här är länken till den artikeln: https://www.geeksforgeeks.org/sys-stdout-write-in-python/
+> På fredagen började jag definera klasserna Game, Player, HumanPlayer, ComputerPlayer, Board, och Move. Jag tänkte att jag börjar med att göra funktionen för spelbrädet och med lite tips från Rikard förstod jag ungefär hur jag skulle göra för att då fram rutorna och raderna i brädet. Det ända jag behövde lösa var hur jag skulle få allt att skrivas ut för spelaren, och jag hittade denna artikeln/"dokumentation" om funktionen sys.stdout.write. Här är länken till den artikeln: https://www.geeksforgeeks.org/sys-stdout-write-in-python/
 > 
 > På måndagen satte igång katalogen och fil för tre-i-rad och planering med mål inför projektet:
 ### Mål

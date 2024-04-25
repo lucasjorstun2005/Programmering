@@ -1,5 +1,7 @@
 # Loggbok
 ===========
+## Vecka 16
+> Jag gjorde implementationen där man programmet ser om någon har vunnit, den kollar efter om någon har vunnit vertikalt, horisontellt eller diagonalt. Det ända jag har kvar är att "play" funktionen ska kunna läsa in brädet, då det blir en error när någon gör ett drag som säger att play funktionen inte kan göra appliceringar. När jag har löst det tror jag att allt borde fungera bra.
 ## Vecka 13-15
 > Jag gjorde lite på game klassen men skapade också en klass för att göra ett drag. Det jag började med var en funktion som heter ask_move. Det den gör är att den först kollar om spelaren har angett ett korrekt nummer och efter det kollar den om det redan gjorts ett drag på det numret. Det var ganska svårt då jag inte är så van med att använda self så behövde bara experimentera lite med det men jag tror det är OK nu.
 ## Vecka 12

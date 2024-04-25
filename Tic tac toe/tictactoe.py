@@ -48,6 +48,7 @@ class Game(object):
 
         return False
     def game_over(self, player_symbol):
+        self.board.print_board()
         print("Spelet är slut! Vinnaren är " + player_symbol + "!")
 
 class Player(object):
@@ -72,7 +73,7 @@ class ComputerPlayer(Player):
 class Board(object):
     # En lista med rutor
     def __init__(self):
-        self.tiles = range(9)
+        self.tiles = ['0', '1', '2', '3', '4', '5', '6', '7', '8']
     
     # Organiserar rader så att det är tre rutor i varje rad
     def organize_board(self):
@@ -110,7 +111,7 @@ class Move(object):
                 print("Vänligen ange ett nummer mellan 0-8: ")
                 return self.ask_move()
             
-            if move != self.board.tiles[move]:
+            if move == self.board.tiles[move]:
                 print("Det har redan gjorts ett drag här, försök igen:")
                 return self.ask_move()
             
